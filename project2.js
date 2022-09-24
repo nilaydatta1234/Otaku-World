@@ -30,7 +30,6 @@ press1.addEventListener("click",e => {
         image_3.push(e);
         e.style.display = "inline";
     })
-    img.style.height = "130%";
     butt.textContent = "show Less";
    
 }
@@ -43,7 +42,6 @@ else{
         image3.push(e);
         e.style.display = "none";
     })
-    img.style.height = "40%";
     butt.textContent = "show More";
 
 }
