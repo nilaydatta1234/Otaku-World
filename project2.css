@@ -24,23 +24,25 @@ a:hover{
 .title{
    margin-top: 0.5%;
    background-image: url("images/background.png");
-   height: 30%;
+   height: 8rem;
    background-repeat: no-repeat;
    background-size: 100% 100%;
    color: white;
    padding-left: 20%; 
    font-size: 2rem; 
+   /* border:2px solid black; */
 }
 .popular{
     margin-top: 2rem;
     margin-left: 12rem;
+    /* border:2px solid black */
 }
 p{
     font-size: 2rem;
     font-family: oswald;
 }
 .image{
-    display: flex;
+   display: flex;
    flex-direction:row;
    flex-wrap: wrap;
    justify-content: center;
@@ -51,24 +53,26 @@ p{
    margin-right: 10rem;
    margin-top:2rem;
    /* border: 2px solid black; */
-   height:40%;
+   height:auto;
 }
-.image::after{
-    content:'';
-    height:250px;
-    width:150px;
-}
+
 img{
     
     height:250px;
     width:150px;
 }
+
+#buttdiv {
+    width: 100%;
+    text-align: center;
+}
+
 #press1{
     padding-top: 1em;
-    padding-right: 2.5em;
+    padding-right: 2.5em; 
     padding-bottom: 1em;
     padding-left: 2.5em;
-    margin-left:45%;
+    margin-top: 3%;
     background-color:#d3d2d2;
     border-radius: 2px;
     cursor: pointer;
@@ -81,5 +85,33 @@ img{
     background-color: #193767;
     color: #d3d2d2;
 }
+@media(max-width:500px)
+    {
+        .options{
+            margin-left: 3rem;
+        }
+    }
 
+    @media(max-width:366px)
+    {
+        .options{
+            margin-left: 2rem;
+        }
+    }
+    @media(max-width:660px)
+    {
+        .title{
+        
+            font-size: 1rem;
+        }
+    }
+
+    @media(max-width:523px)
+    {
+        .popular{
+           font-size: 1.5rem;
+           margin-right: 3rem;
+           margin-left: 1rem;
+        }
+    }
 
